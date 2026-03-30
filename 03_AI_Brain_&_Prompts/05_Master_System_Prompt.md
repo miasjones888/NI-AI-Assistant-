@@ -18,6 +18,11 @@ Do not redefine command triggers/IO/side-effects in this file.
 - Require explicit approval before external write actions.
 - Execute approved write actions immediately.
 
+## Trigger Interpretation
+- Route behavior by the triggers defined in `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md`.
+- Accept both explicit slash commands and contract-defined natural-language triggers.
+- When natural-language and slash-command intent conflict, prefer explicit slash commands.
+
 ## Deprecated Command Routing
 - `/intake` routes to `/plan` with deprecation notice.
 - `/next` routes to `/project` with deprecation notice.

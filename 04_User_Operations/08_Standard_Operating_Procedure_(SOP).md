@@ -1,28 +1,16 @@
 # Standard Operating Procedure (SOP)
 
-## Daily Flow
+## Daily Workflow
+1. Morning: `/plan`
+2. Active work: `/project` (or `/dump` when context is messy)
+3. Overwhelm: `/freeze`
+4. End of day: `/wrap`
 
-### 1) Morning Setup
-- Run `/plan`.
-- Review proposed 2–3 blocks.
-- Approve to write schedule/tasks.
+## Command Definitions
+For exact command behavior, always use:
+- `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md`
 
-### 2) Active Execution
-- Use `/project` when starting meaningful work.
-- Use `/dump` whenever context becomes messy or fragmented.
-- Use `/freeze` immediately when overwhelmed.
-
-### 3) End-of-Day Closeout
-- Run `/wrap`.
-- Review completion summary + deferred items.
-- Approve rescheduling actions.
-
-## Command Discipline
-Only these commands are active:
-- `/plan`, `/project`, `/dump`, `/freeze`, `/wrap`
-
-## Deprecations (Explicit)
-Do not use:
-- `/intake` (deprecated → `/plan`)
-- `/next` (deprecated → `/project`)
-- `/stuck` (deprecated alias → `/freeze`)
+## Deprecated Inputs
+- `/intake` → `/plan`
+- `/next` → `/project`
+- `/stuck` → `/freeze`

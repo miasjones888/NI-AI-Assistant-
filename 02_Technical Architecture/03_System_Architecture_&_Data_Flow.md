@@ -1,35 +1,22 @@
 # System Architecture & Data Flow
 
-## Command Orchestration Authority
-All command routing and behavior are controlled by:
+## Contract Authority
+For command behavior, this architecture doc defers to:
 - `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md`
 
-If architecture notes and command definitions conflict, the command library is authoritative.
+This file documents only architecture constraints, not command-level copy.
 
-## Supported Runtime Commands
+## Runtime Constraints
+- Manual pull-trigger model.
+- Chat-scoped working memory.
+- Persist approved state immediately to Calendar/Tasks.
+- No external write action without explicit user approval.
+
+## Command Surface
+Active commands are exactly:
 - `/plan`, `/project`, `/dump`, `/freeze`, `/wrap`
 
-## Data-Flow Contracts (by command)
-- `/plan`
-  - Reads: Gmail (`newer_than:1d`), Calendar availability.
-  - Writes (post-approval): Calendar events + Tasks.
-- `/project`
-  - Reads: Drive context (optional), Calendar availability.
-  - Writes (post-approval): Calendar events + Tasks.
-- `/dump`
-  - Reads: user-provided text.
-  - Writes (post-approval): optional Calendar/Tasks.
-- `/freeze`
-  - Reads/Writes: no automatic external tool actions.
-- `/wrap`
-  - Reads: Calendar + Tasks.
-  - Writes (post-approval): defer/reschedule unfinished work.
-
-## State and Safety Rules
-- Session memory is chat-scoped; persistent state must be written to Calendar/Tasks after approval.
-- All write operations require explicit user consent.
-- Outputs must never exceed 3 actionable items surfaced at once.
-
-## Deprecations (Explicit)
-- Remove `/intake`, `/next`, and `/stuck` from active routing.
-- Map deprecated commands to supported replacements with user-facing deprecation notice.
+Deprecated mappings:
+- `/intake` → `/plan`
+- `/next` → `/project`
+- `/stuck` → `/freeze`

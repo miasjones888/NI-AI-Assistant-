@@ -1,5 +1,4 @@
 > **Conversion note:** Converted from `01_Product_Requirements_Document_(PRD).md.docx` on 2026-03-30.
-=======
 # Product Requirements Document (PRD)
 
 ## Product
@@ -47,7 +46,6 @@ To prevent duplicate policies and broken handoffs, each domain doc must link bac
 - **Technical Architecture** defers command behavior to `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md` and naming to this PRD.
 - **AI Brain & Prompts** defers naming to this PRD and operational runbook behaviors to SOP.
 - **User Operations** defers command semantics to slash command library and naming to this PRD.
-=======
 # 01_Product_Requirements_Document_(PRD)
 
 > Canonical Markdown source generated from the existing `.md.docx` file.

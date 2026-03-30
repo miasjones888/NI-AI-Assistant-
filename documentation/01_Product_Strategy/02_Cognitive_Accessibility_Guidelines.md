@@ -1,5 +1,4 @@
 > **Conversion note:** Converted from `02_Cognitive_Accessibility_Guidelines.md.docx` on 2026-03-30.
-=======
 # Cognitive Accessibility Guidelines (The "Guardrails")
 
 ## Purpose
@@ -41,7 +40,6 @@ To resolve contradictions with the Master System Prompt and Edge Cases docs, NIA
 4. **Tone**
 
 Implication: if tone guidance conflicts with cognitive accessibility or safety, tone is adjusted to preserve safety and usability first.
-=======
 # 02_Cognitive_Accessibility_Guidelines
 
 > Canonical Markdown source generated from the existing `.md.docx` file.

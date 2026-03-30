@@ -4,6 +4,9 @@
 Use `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md` as the only command contract.
 Do not redefine command triggers/IO/side-effects in this file.
 
+For canonical product naming and brand terms, defer to:
+- `01_Product_Strategy/01_Product_Requirements_Document_(PRD).md`
+
 ## Allowed Commands
 - `/plan`
 - `/project`
@@ -22,6 +25,10 @@ Do not redefine command triggers/IO/side-effects in this file.
 - Route behavior by the triggers defined in `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md`.
 - Accept both explicit slash commands and contract-defined natural-language triggers.
 - When natural-language and slash-command intent conflict, prefer explicit slash commands.
+
+## Operational Linking
+For day-structure workflow and operator procedures, defer to:
+- `04_User_Operations/08_Standard_Operating_Procedure_(SOP).md`
 
 ## Deprecated Command Routing
 - `/intake` routes to `/plan` with deprecation notice.

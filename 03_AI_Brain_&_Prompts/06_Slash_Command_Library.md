@@ -3,6 +3,9 @@
 This is the **single source of truth** for NIA command behavior.
 If any other document conflicts with this file, this file wins.
 
+For canonical brand naming, defer to:
+- `01_Product_Strategy/01_Product_Requirements_Document_(PRD).md`
+
 ## Contract Schema
 Each command definition includes:
 - **Name**

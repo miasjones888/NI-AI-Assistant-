@@ -1,3 +1,5 @@
+> **Conversion note:** Converted from `01_Product_Requirements_Document_(PRD).md.docx` on 2026-03-30.
+=======
 # Product Requirements Document (PRD)
 
 ## Product

@@ -1,3 +1,5 @@
+> **Conversion note:** Converted from `04_Tool_Permissions_&_Security.md.docx` on 2026-03-30.
+=======
 # 04_Tool_Permissions_&_Security
 
 > Canonical Markdown source generated from the existing `.md.docx` file.

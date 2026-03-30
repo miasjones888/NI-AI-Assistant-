@@ -1,3 +1,4 @@
+> **Conversion note:** Converted from `07_Edge_Cases_&_Failure_Modes.md.docx` on 2026-03-30.
 # Edge Cases & Failure Modes
 
 ## Purpose
@@ -39,7 +40,6 @@ If a polished tone conflicts with stabilization or usability, prioritize stabili
 - **Error:** direct, non-blaming, fallback-first.
 
 These definitions match the Master System Prompt tone policy and accessibility rules.
-=======
 # 07_Edge_Cases_&_Failure_Modes
 
 > Canonical Markdown source generated from the existing `.md.docx` file.

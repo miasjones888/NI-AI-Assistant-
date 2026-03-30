@@ -1,3 +1,4 @@
+> **Conversion note:** Converted from `08_Standard_Operating_Procedure_(SOP).md.docx` on 2026-03-30.
 # Standard Operating Procedure (SOP)
 
 ## Document Role
@@ -24,7 +25,6 @@ For canonical product naming/brand wording, use:
 ## Prompting Alignment
 Prompt routing behavior and trigger interpretation are defined in:
 - `03_AI_Brain_&_Prompts/05_Master_System_Prompt.md`
-=======
 # 08_Standard_Operating_Procedure_(SOP)
 
 > Canonical Markdown source generated from the existing `.md.docx` file.

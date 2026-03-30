@@ -1,3 +1,5 @@
+> **Conversion note:** Converted from `02_Cognitive_Accessibility_Guidelines.md.docx` on 2026-03-30.
+=======
 # Cognitive Accessibility Guidelines (The "Guardrails")
 
 ## Purpose

@@ -1,3 +1,5 @@
+> **Conversion note:** Converted from `02b_Decolonial_and_Non_Hierarchical_Design_Principles.md.docx` on 2026-03-30.
+=======
 # 02b_Decolonial_and_Non_Hierarchical_Design_Principles
 
 > Canonical Markdown source generated from the existing `.md.docx` file.

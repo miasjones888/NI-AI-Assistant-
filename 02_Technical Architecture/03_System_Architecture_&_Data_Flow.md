@@ -1,3 +1,5 @@
+> **Conversion note:** Converted from `03_System_Architecture_&_Data_Flow.md.docx` on 2026-03-30.
+=======
 # System Architecture & Data Flow
 
 ## Document Role

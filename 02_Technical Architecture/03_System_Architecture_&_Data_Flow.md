@@ -1,5 +1,4 @@
 > **Conversion note:** Converted from `03_System_Architecture_&_Data_Flow.md.docx` on 2026-03-30.
-=======
 # System Architecture & Data Flow
 
 ## Document Role
@@ -35,7 +34,6 @@ Operational execution and runbook sequencing live in:
 
 Quick command lookup lives in:
 - `04_User_Operations/09_Quick_Reference_Cheat_Sheet.md`
-=======
 # 03_System_Architecture_&_Data_Flow
 
 > Canonical Markdown source generated from the existing `.md.docx` file.

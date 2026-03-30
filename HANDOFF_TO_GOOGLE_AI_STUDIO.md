@@ -23,25 +23,25 @@ Ingest in this order to avoid prompt/architecture drift:
 
 1. `README.md`  
    Baseline orientation, repository structure, and onboarding anchor.
-2. `01_Product_Strategy/01_Product_Requirements_Document_(PRD).md.docx`  
+2. `01_Product_Strategy/01_Product_Requirements_Document_(PRD).md`  
    Primary source for product goals, constraints, and success criteria.
-3. `01_Product_Strategy/02_Cognitive_Accessibility_Guidelines.md.docx`  
+3. `01_Product_Strategy/02_Cognitive_Accessibility_Guidelines.md`  
    Accessibility requirements that must influence UX/content behavior.
-4. `01_Product_Strategy/02b_Decolonial_and_Non_Hierarchical_Design_Principles.md.docx`  
+4. `01_Product_Strategy/02b_Decolonial_and_Non_Hierarchical_Design_Principles.md`  
    Normative design principles and interaction posture.
-5. `02_Technical Architecture/03_System_Architecture_&_Data_Flow.md.docx`  
+5. `02_Technical Architecture/03_System_Architecture_&_Data_Flow.md`  
    Canonical architecture and data movement assumptions.
-6. `02_Technical Architecture/04_Tool_Permissions_&_Security.md.docx`  
+6. `02_Technical Architecture/04_Tool_Permissions_&_Security.md`  
    Security model, tool-use boundaries, and permission expectations.
-7. `03_AI_Brain_&_Prompts/05_Master_System_Prompt.md.docx`  
+7. `03_AI_Brain_&_Prompts/05_Master_System_Prompt.md`  
    Core behavioral/system-instruction source for assistant execution.
-8. `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md.docx`  
+8. `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md`  
    Command schema, invocation intent, and operational semantics.
-9. `03_AI_Brain_&_Prompts/07_Edge_Cases_&_Failure_Modes.md.docx`  
+9. `03_AI_Brain_&_Prompts/07_Edge_Cases_&_Failure_Modes.md`  
    Reliability and safety handling for non-happy-path scenarios.
-10. `04_User_Operations/08_Standard_Operating_Procedure_(SOP).md.docx`  
+10. `04_User_Operations/08_Standard_Operating_Procedure_(SOP).md`  
     Operator playbooks and production process guidance.
-11. `04_User_Operations/09_Quick_Reference_Cheat_Sheet.md.docx`  
+11. `04_User_Operations/09_Quick_Reference_Cheat_Sheet.md`  
     Fast operational checks; use for quick validation only.
 
 ## 3) Deprecated / Non-Authoritative Files to Ignore
@@ -66,8 +66,8 @@ When generating behavior in Google AI Studio, enforce this precedence stack (hig
 
 1. Platform/runtime hard constraints (safety, policy, and security enforcement).
 2. Session-level system instructions configured in AI Studio.
-3. Project master prompt in `03_AI_Brain_&_Prompts/05_Master_System_Prompt.md.docx`.
-4. Applicable command-specific instructions in `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md.docx`.
+3. Project master prompt in `03_AI_Brain_&_Prompts/05_Master_System_Prompt.md`.
+4. Applicable command-specific instructions in `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md`.
 5. Product and design constraints from strategy docs (PRD, accessibility, decolonial principles).
 6. Technical and operational constraints from architecture/security/SOP docs.
 7. User prompts and conversational context.
@@ -82,14 +82,14 @@ Tie-break rules:
 
 ### Open Questions
 
-- Are `.md.docx` files intended to remain the long-term canonical format, or will pure `.md` versions replace them?
+- Are there any external stakeholders who still require off-repo `.docx` exports as part of handoff?
 - Which owner is final approver for prompt changes vs. architecture/security changes?
 - What evaluation suite (if any) is mandatory before deployment in AI Studio?
 - What is the required cadence for syncing Google AI Studio prompts with repo updates?
 
 ### Known Risks
 
-- **Format friction risk:** `.md.docx` may reduce portability and increase ingestion inconsistencies.
+- **Format mismatch risk:** external teams may request `.docx` deliverables even though this repo is Markdown-only.
 - **Instruction drift risk:** AI Studio system settings can silently diverge from repository prompt definitions.
 - **Conflict risk:** overlapping guidance across product, prompt, and operations docs may produce inconsistent behavior if precedence is not enforced.
 - **Security regression risk:** tool-permission policies may be weakened if architecture/security docs are not treated as binding.

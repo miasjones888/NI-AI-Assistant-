@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NI Shared UI Primitives</title>
+    <link rel="stylesheet" href="./styles/primitives.css" />
+    <style>
+      .stack {
+        display: grid;
+        gap: 10px;
+      }
+      .controls {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    </style>
+  </head>
+  <body>
+    <window-frame title="Neighborhood Index Directory">
+      <div class="stack">
+        <ni-panel>
+          <strong>Welcome</strong>
+          <p>All screens should compose these primitives for a cohesive environment.</p>
+        </ni-panel>
+
+        <ni-panel inset>
+          <div class="controls">
+            <pixel-button label="Open"></pixel-button>
+            <pixel-button label="Save"></pixel-button>
+          </div>
+          <div style="margin-top: 8px"><pixel-input name="search" placeholder="Search directory..." /></div>
+        </ni-panel>
+
+        <ni-panel>
+          <link-list aria-label="Directory links">
+            <li><a href="#">Community Bulletin Board</a></li>
+            <li><a href="#">Local Services Index</a></li>
+            <li><a href="#">Shared Project Archives</a></li>
+          </link-list>
+        </ni-panel>
+      </div>
+
+      <status-bar slot="status" left="Connected to Local Web" right="v1.0.0"></status-bar>
+    </window-frame>
+
+    <script type="module" src="./components/primitives.js"></script>
+  </body>
+</html>

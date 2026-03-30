@@ -1,4 +1,9 @@
 > **Conversion note:** Converted from `02b_Decolonial_and_Non_Hierarchical_Design_Principles.md.docx` on 2026-03-30.
+=======
+# 02b_Decolonial_and_Non_Hierarchical_Design_Principles
+
+> Canonical Markdown source generated from the existing `.md.docx` file.
+> Keep this `.md` file as the source of truth; `.docx` is an optional export artifact.
 
 # Decolonial, Feminist, & Non-Hierarchical Design Principles
 Purpose: This document outlines the foundational sociotechnical paradigms of the Neuro-Inclusive Executive Assistant (NIA). It explicitly rejects the traditional, Western "Silicon Valley" model of productivity—which is often hierarchical, patriarchal, and extractive—in favor of decolonial, feminist, and Indigenous knowledge frameworks.

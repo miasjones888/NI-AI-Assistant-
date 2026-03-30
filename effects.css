@@ -1,0 +1,114 @@
+:root {
+  /* Readability-first defaults */
+  --fx-link-color: #89b4ff;
+  --fx-link-hover-color: #c4ddff;
+  --fx-link-underline-thickness: 1px;
+
+  --fx-fast-step: 100ms;
+  --fx-instant: 0ms;
+
+  --fx-prompt-pulse-opacity-low: 0.7;
+  --fx-prompt-pulse-opacity-high: 1;
+
+  --fx-scanline-opacity: 0.06;
+  --fx-scanline-size: 3px;
+
+  --fx-enabled-link-hover: 1;
+  --fx-enabled-prompt-pulse: 1;
+  --fx-enabled-scanline: 0;
+}
+
+/* User toggle hooks (set by data attributes/classes) */
+[data-fx='minimal'] {
+  --fx-enabled-link-hover: 0;
+  --fx-enabled-prompt-pulse: 0;
+  --fx-enabled-scanline: 0;
+}
+
+[data-fx='standard'] {
+  --fx-enabled-link-hover: 1;
+  --fx-enabled-prompt-pulse: 1;
+  --fx-enabled-scanline: 0;
+}
+
+[data-fx='scanline'] {
+  --fx-enabled-link-hover: 1;
+  --fx-enabled-prompt-pulse: 1;
+  --fx-enabled-scanline: 1;
+}
+
+/* --- Link hover: color shift + underline --- */
+a,
+.link {
+  color: var(--fx-link-color);
+  text-decoration-color: color-mix(in srgb, var(--fx-link-color) 60%, transparent);
+  text-decoration-thickness: var(--fx-link-underline-thickness);
+  text-underline-offset: 2px;
+  transition-property: color, text-decoration-color;
+  transition-duration: calc(var(--fx-enabled-link-hover) * var(--fx-fast-step));
+  transition-timing-function: steps(1, end);
+}
+
+a:hover,
+a:focus-visible,
+.link:hover,
+.link:focus-visible {
+  color: var(--fx-link-hover-color);
+  text-decoration-color: var(--fx-link-hover-color);
+}
+
+/* --- Single focal pulse (terminal cursor/prompt) --- */
+.fx-prompt,
+.fx-cursor {
+  will-change: opacity;
+}
+
+[data-fx-pulse='on'] .fx-prompt,
+[data-fx-pulse='on'] .fx-cursor {
+  animation: fx-prompt-pulse 1.2s steps(2, end) infinite;
+  animation-play-state: running;
+}
+
+[data-fx-pulse='off'] .fx-prompt,
+[data-fx-pulse='off'] .fx-cursor {
+  animation: none;
+}
+
+@keyframes fx-prompt-pulse {
+  0%,
+  49% {
+    opacity: calc(var(--fx-enabled-prompt-pulse) * var(--fx-prompt-pulse-opacity-high));
+  }
+  50%,
+  100% {
+    opacity: calc(var(--fx-enabled-prompt-pulse) * var(--fx-prompt-pulse-opacity-low));
+  }
+}
+
+/* --- Optional scanline overlay (subtle, GPU-cheap) --- */
+[data-fx-scanline='on'] .fx-scanline-layer::before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, var(--fx-scanline-opacity)) 0,
+    rgba(255, 255, 255, var(--fx-scanline-opacity)) 1px,
+    transparent 1px,
+    transparent var(--fx-scanline-size)
+  );
+  mix-blend-mode: soft-light;
+}
+
+/* Respect reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0ms !important;
+    transition-duration: 0ms !important;
+  }
+
+  :root {
+    --fx-enabled-prompt-pulse: 0;
+  }
+}

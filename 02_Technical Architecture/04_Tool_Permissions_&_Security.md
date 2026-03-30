@@ -1,4 +1,9 @@
 > **Conversion note:** Converted from `04_Tool_Permissions_&_Security.md.docx` on 2026-03-30.
+=======
+# 04_Tool_Permissions_&_Security
+
+> Canonical Markdown source generated from the existing `.md.docx` file.
+> Keep this `.md` file as the source of truth; `.docx` is an optional export artifact.
 
 # Tool Permissions & Security
 Purpose: This document outlines the exact data access permissions and security guardrails for the Neuro-Inclusive Executive Assistant (NIA). The primary goal is to maintain absolute psychological safety and user autonomy. The user must never worry that the AI is acting maliciously or making permanent changes without their consent.

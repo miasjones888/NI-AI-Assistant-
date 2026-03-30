@@ -1,4 +1,34 @@
 > **Conversion note:** Converted from `08_Standard_Operating_Procedure_(SOP).md.docx` on 2026-03-30.
+# Standard Operating Procedure (SOP)
+
+## Document Role
+This runbook defines operator workflow sequencing.
+
+## Authority Links
+For exact command behavior, always use:
+- `03_AI_Brain_&_Prompts/06_Slash_Command_Library.md`
+
+For canonical product naming/brand wording, use:
+- `01_Product_Strategy/01_Product_Requirements_Document_(PRD).md`
+
+## Daily Workflow
+1. Morning: `/plan`
+2. Active work: `/project` (or `/dump` when context is messy)
+3. Overwhelm: `/freeze`
+4. End of day: `/wrap`
+
+## Deprecated Inputs
+- `/intake` → `/plan`
+- `/next` → `/project`
+- `/stuck` → `/freeze`
+
+## Prompting Alignment
+Prompt routing behavior and trigger interpretation are defined in:
+- `03_AI_Brain_&_Prompts/05_Master_System_Prompt.md`
+# 08_Standard_Operating_Procedure_(SOP)
+
+> Canonical Markdown source generated from the existing `.md.docx` file.
+> Keep this `.md` file as the source of truth; `.docx` is an optional export artifact.
 
 # Standard Operating Procedure (SOP)
 Purpose: This document outlines the daily interaction routine between the user and the Neuro-Inclusive Executive Assistant (NIA). It is designed to minimize cognitive load by establishing a predictable, low-friction daily rhythm that offloads work anxiety before it can build up.

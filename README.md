@@ -1,5 +1,9 @@
 # NI-AI-Assistant-
 
+## Frontend documentation
+
+- [Frontend Contribution Guide](docs/frontend-contribution-guide.md)
+=======
 ## ASCII Treatment Guidelines (High-Visibility, Low-Friction)
 
 Use ASCII as lightweight visual scaffolding in places users already scan quickly, without blocking content flow.

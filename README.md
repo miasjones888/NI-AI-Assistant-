@@ -29,6 +29,9 @@ It is organized around four core concerns:
 ### Documentation policy
 - Markdown (`.md`) files in the core folders are the only source of truth.
 - Generated document exports are no longer stored in this repository to avoid duplicate content.
+### Export artifacts
+- `documentation/` contains generated `.md.docx` exports for distribution.
+- Markdown (`.md`) files in the core folders are canonical and should be edited first.
 
 ---
 

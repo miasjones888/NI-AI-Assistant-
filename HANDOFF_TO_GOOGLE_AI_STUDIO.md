@@ -82,6 +82,7 @@ Tie-break rules:
 
 ### Open Questions
 
+- Are there any external stakeholders who still require off-repo `.docx` exports as part of handoff?
 - Are generated `.md.docx` export files in `documentation/` still required for external distribution?
 - Which owner is final approver for prompt changes vs. architecture/security changes?
 - What evaluation suite (if any) is mandatory before deployment in AI Studio?
@@ -89,6 +90,7 @@ Tie-break rules:
 
 ### Known Risks
 
+- **Format mismatch risk:** external teams may request `.docx` deliverables even though this repo is Markdown-only.
 - **Format friction risk:** relying on generated `.md.docx` exports can reduce portability and increase ingestion inconsistencies.
 - **Instruction drift risk:** AI Studio system settings can silently diverge from repository prompt definitions.
 - **Conflict risk:** overlapping guidance across product, prompt, and operations docs may produce inconsistent behavior if precedence is not enforced.

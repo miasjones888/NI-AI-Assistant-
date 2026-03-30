@@ -6,7 +6,7 @@ This document defines how NIA integrates with Google Workspace services (Gmail, 
 - permission boundaries (read vs write),
 - user consent flow,
 - extension-first vs API-direct fallback behavior, and
-- failure handling aligned to `03_AI_Brain_&_Prompts/07_Edge_Cases_&_Failure_Modes.md.docx`.
+- failure handling aligned to `03_AI_Brain_&_Prompts/07_Edge_Cases_&_Failure_Modes.md`.
 
 ---
 
